@@ -1,0 +1,54 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django / Flask / FastAPI specific
+*.log
+*.sqlite3
+*.db
+*.pid
+*.swp
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variable files (do not commit secrets)
+.env
+.env.*
+
+# Test output
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Docker related files
+docker-compose.override.yml
+Dockerfile
+
+# Git files
+.git/
+
+# Poetry dependencies
+poetry.lock
+
+# Pipenv dependencies
+Pipfile.lock
