@@ -7,7 +7,9 @@ from fastapi import Depends
 
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./todos.db"  # or your real DB
 
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost/todos"
+#SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost/todos"
+
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@db/todos"
 
 
 # engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
