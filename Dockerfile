@@ -16,6 +16,5 @@ COPY . .
 # Expose the port FastAPI is running on
 EXPOSE 8000
 
-# Command to run the application
-CMD ["/app/wait-for-it.sh", "db:5432", "--", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-
+# Start command with wait-for-it
+CMD ["/app/wait-for-it.sh", "db:5432", "--", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
